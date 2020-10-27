@@ -163,10 +163,17 @@ header{
   border-bottom: 3px solid #50C7C7;
   display:flex;
   justify-content:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav_links{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
 }
 
 .nav_item a{
@@ -196,23 +203,40 @@ header{
   /* Navbar */
   header{
   justify-content: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   }
 
   .nav_links{
-
+    align-self:flex-end;
+    flex-basis:100%;
+    flex-flow:column;
+    display: flex;
+    flex-direction: row;
   }
 
   .nav_item a{
     padding: 10px;
-  }
+
+
 }
 
 @media print {
+  .gallery {
+  display: none;
+}
+#gallery {
+display: none;
+}
   .card {
     flex-basis: 200px;
   }
-  /*Your code here again.*/
-  /*You will want four selectors*/
+  body{
+    background-image:url("");
+    }
 }
 
 @media screen and (prefers-reduced-motion: reduce){
